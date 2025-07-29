@@ -13,7 +13,7 @@ const Weather = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [currentTime, setCurrentTime] = useState(new Date());
 
-  const apiKey = '1cb16fb5232ac282b934461cc9309efe';
+  const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
 
   // Update time every second
   useEffect(() => {
